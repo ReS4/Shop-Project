@@ -3,6 +3,7 @@
 #########################
 
 # Setup the environment when starting Tornado.
+from tornado import autoreload
 from tornado.options import options, define
 import env_setup
 define("port", default=8004, help="run on the given port", type=int)
@@ -18,6 +19,9 @@ if __name__ == '__main__':
     tornado.options.parse_command_line()
     app = tornado.web.Application(
         url_patterns,
+        debug = True,
+        autoreload = False,
+
         template_path=os.path.join(os.path.dirname(__file__), "templates"),
         static_path=os.path.join(os.path.dirname(__file__), "static"),
         )
