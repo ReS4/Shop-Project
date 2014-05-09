@@ -1,4 +1,4 @@
 Shop-Project
 ============
 
-Educational Shop Project
+Educational Project with Tornado Framework
