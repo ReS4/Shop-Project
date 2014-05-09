@@ -1,4 +1,26 @@
 body{
     background: #52b6df;
     font-family: byekan;
+    direction: rtl;
+}
+span,p,a{
+    padding: 5px;
+}
+header{
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+header .back{
+    margin: 0 auto !important;
+    position: relative;
+    top: 0;
+}
+header .title_txt{
+    width: 100%;
+    position: relative;
+    top: -140px;
+    font-size: 50pt;
+    color: #ffffff;
+    text-align: center;
 }
